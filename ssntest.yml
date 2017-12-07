@@ -11,6 +11,4 @@
       copy:
         src: /home/techmadmin/Desktop/test.txt 
         dest: /tmp/
-        owner: awx
-        group: awx
-        mode: 0644
+        remote_src: no

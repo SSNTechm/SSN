@@ -1,5 +1,6 @@
 - name: Hello World Sample
   hosts: all
+  remote_user: root
   tasks:
     - name: Hello Message
       debug:

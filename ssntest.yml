@@ -1,6 +1,6 @@
 - name: Hello World Sample
   hosts: all
-  remote_user: root
+  remote_user: awx
   tasks:
     - name: Hello Message
       debug:
@@ -9,8 +9,8 @@
       shell: echo "HelloWorld"
     - name: copy one file to another
       copy:
-        src: /root/samplefiles/testsample.yml 
+        src: /home/techmadmin/documents/sample.txt 
         dest: /tmp/
-        owner: root
-        group: root
+        owner: awx
+        group: awx
         remote_src: no

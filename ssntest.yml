@@ -11,4 +11,6 @@
       copy:
         src: /root/samplefiles/testsample.yml 
         dest: /tmp/
+        owner: root
+        group: root
         remote_src: no

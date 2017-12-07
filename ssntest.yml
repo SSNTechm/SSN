@@ -14,3 +14,11 @@
         owner: awx
         group: awx
         remote_src: no
+    - file:
+       path: /home/techmadmin/ssn
+       state: directory
+       mode: 0755
+    - file:
+       path: /tmp/ssn
+       state: directory
+       mode: 0755

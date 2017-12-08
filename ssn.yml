@@ -1,6 +1,6 @@
 - name: Hello World Sample
   hosts: all
-  remote_user: techadmin
+  remote_user: root
   tasks:
     - name: Hello Message
       debug:
@@ -11,6 +11,6 @@
       copy:
         src: /home/techmadmin/Desktop/test.txt 
         dest: /tmp/
-        owner: awx
-        group: awx
+        owner: root
+        group: root
         mode: 0644
